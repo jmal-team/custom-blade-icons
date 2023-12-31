@@ -17,8 +17,9 @@
     ],
     "require": {
         "php": "^8.1",
-        "spatie/laravel-package-tools": "^1.14.0",
-        "illuminate/contracts": "^10.0"
+        "blade-ui-kit/blade-icons": "^1.5",
+        "illuminate/contracts": "^10.0",
+        "spatie/laravel-package-tools": "^1.14.0"
     },
     "require-dev": {
         "laravel/pint": "^1.0",
@@ -35,8 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jmal\\CustomBladeIcons\\": "src/",
-            "Jmal\\CustomBladeIcons\\Database\\Factories\\": "database/factories/"
+            "Jmal\\CustomBladeIcons\\": "src/"
         }
     },
     "autoload-dev": {
@@ -74,10 +74,7 @@
         "laravel": {
             "providers": [
                 "Jmal\\CustomBladeIcons\\CustomBladeIconsServiceProvider"
-            ],
-            "aliases": {
-                "CustomBladeIcons": "Jmal\\CustomBladeIcons\\Facades\\CustomBladeIcons"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
