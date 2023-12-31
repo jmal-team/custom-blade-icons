@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
+    "name": "jmal-team/custom-blade-icons",
     "description": ":package_description",
     "keywords": [
-        ":vendor_name",
+        "jmal-team",
         "laravel",
-        ":package_slug"
+        "custom-blade-icons"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/jmal-team/custom-blade-icons",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": ":jmal-team",
+            "email": "loaidev64@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Jmal\\CustomBladeIcons\\": "src/",
+            "Jmal\\CustomBladeIcons\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Jmal\\CustomBladeIcons\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Jmal\\CustomBladeIcons\\CustomBladeIconsServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "CustomBladeIcons": "Jmal\\CustomBladeIcons\\Facades\\CustomBladeIcons"
             }
         }
     },
