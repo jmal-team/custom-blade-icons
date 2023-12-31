@@ -3,9 +3,9 @@
 namespace Jmal\CustomBladeIcons;
 
 use BladeUI\Icons\Factory;
+use Illuminate\Contracts\Container\Container;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Illuminate\Contracts\Container\Container;
 
 class CustomBladeIconsServiceProvider extends PackageServiceProvider
 {
