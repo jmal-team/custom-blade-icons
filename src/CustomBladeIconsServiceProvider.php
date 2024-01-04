@@ -3,10 +3,10 @@
 namespace Jmal\CustomBladeIcons;
 
 use BladeUI\Icons\Factory;
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Illuminate\Contracts\Container\Container;
 use RecursiveDirectoryIterator;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class CustomBladeIconsServiceProvider extends PackageServiceProvider
 {
@@ -22,12 +22,12 @@ class CustomBladeIconsServiceProvider extends PackageServiceProvider
         while ($it->valid()) {
             if (
                 $it->isFile() &&
-                !$it->isDot() &&
+                ! $it->isDot() &&
                 $it->current()->getExtension() === 'svg' &&
                 $it->isReadable()
             ) {
-                $fileName = str($it->getPathname())->after($folder . '/')->before('/');
-                if (!str($fileName)->endsWith('.svg')) {
+                $fileName = str($it->getPathname())->after($folder.'/')->before('/');
+                if (! str($fileName)->endsWith('.svg')) {
                     $folders[] = $fileName->value();
                 }
             }
@@ -41,7 +41,7 @@ class CustomBladeIconsServiceProvider extends PackageServiceProvider
         foreach ($folders as $value) {
             $factory->add(
                 $value,
-                array_merge(['path' => $folder . '/' . $value], [
+                array_merge(['path' => $folder.'/'.$value], [
 
                     'prefix' => $value,
 
