@@ -15,4 +15,8 @@ return [
         ],
 
     ],
+
+    'svgs_default_path' => resource_path('svg'),
+
+    'auto_import_svgs' => true,
 ];
