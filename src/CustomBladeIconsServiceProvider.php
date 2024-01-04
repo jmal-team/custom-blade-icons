@@ -6,7 +6,6 @@ use BladeUI\Icons\Factory;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Illuminate\Contracts\Container\Container;
-use Illuminate\Support\Facades\Log;
 use RecursiveDirectoryIterator;
 
 class CustomBladeIconsServiceProvider extends PackageServiceProvider
