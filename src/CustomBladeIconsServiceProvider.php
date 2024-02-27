@@ -36,8 +36,6 @@ class CustomBladeIconsServiceProvider extends PackageServiceProvider
 
         $folders = array_unique($folders);
 
-        Log::debug($folders);
-
         foreach ($folders as $value) {
             $factory->add(
                 $value,
